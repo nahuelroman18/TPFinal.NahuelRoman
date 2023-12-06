@@ -3,7 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <title>TODOMOTOS</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">TODOMOTOS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./assets/marcas.html"
+                >marcas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/novedades.html">novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/tienda.html">tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./assets/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="cabecera"><img src=".//img/banner_definitivo.jpg" alt=""></header>
+    <section class="tipos">
+      <h1>TIPOS DE MOTOS</h1>
+      <div class="tipos tipos_container">
+        <article class="card">
+        <img
+        src="img/icono_street.jpg"
+        alt="moto de calle"
+        class="card_icono"
+        />
+        <div class="card_title">
+          <h2>street</h2>
+        </div>
+        <div class="card_container">
+          <p>
+            Rendimientos radicales, estéticas únicas y una historia sin desperdicio. El estilo Streetfighter nació como una filosofía custom, pero ganó un gran número de adeptos al punto de que las principales marcas de la industria se inspiraron en él para desarrollar sus modelos más populares.
+            Se pueden ver máquinas con elementos totalmente fuera de lo común como la Ducati Streetfighter V4, la Kawasaki Z H2, la KTM 1290 superduke, la Yamaha con la MT-10 y otras tantas máquinas más.
+          </p>
+          <a href="/assets/contacto.html" class="boton boton_descubrir">sacate las dudas</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/icono_scooter.jpg" alt="scooter" class="card_icono"/>
+        <div class="card_title">
+          <h2>scooter</h2>
+        </div>
+        <div class="card_container">
+          <p>
+            Son motocicletas citadinas, por lo general de bajo cilindraje y alto rendimiento de combustible. Se diferencian principalmente por su posición de manejo, las piernas del piloto van en una posición central dentro de la moto y no a los costados. Además, poseen una mecánica sencilla y una transmisión automática, que las hacen fáciles de manejar. Son livianas, cómodas y muy ágiles, lo que hace que sean perfectas para los tráficos densos de la ciudad.
+          </p>
+          <a href="/assets/contacto.html" class="boton boton_descubrir">sacate las dudas</a>
+      </div>
+      </article>
+      <article class="card">
+        <img src="img/icono_enduro.png" alt="enduro" class="card_icono"/>
+        <div class="card_title">
+          <h2>enduro</h2>
+        </div>
+        <div class="card_container">
+          <p>
+            El enduro es una modalidad del apasionante deporte del motocross. A
+            diferencia de otros tipos el enduro mezcla el contacto del motor con
+            la naturaleza ya que la práctica de este deporte exige tracks de
+            tierra y generalmente son al aire libre y con el medio ambiente de por
+           medio. <br>
+            Es por ello que las características de estas motos son diferentes a las de cualquier otra motocicleta ya que su estructura debe ser bastante resistente para mantener las llantas en los tracks
+          </p>
+          <a href="/assets/contacto.html" class="boton boton_descubrir">sacate las dudas</a>
+        <div>
+      </article>
+      </div>
+      <!-- publicidad -->
+      <div class="tipos">
+        <article class="card_publicitario">
+          <div class="card_publicitaria_container">
+            <div class="card_title">
+              <h2>Llego la nueva <span>FZ-S FI V3.0</span></h2>
+            </div>
+            <div class="card_container">
+              <p>
+              Se destaca el nuevo diseño del faro con tecnología de iluminación LED,
+              que propone nuevos niveles de equipamiento para aquellos que buscan
+              mayores prestaciones. La posición de manejo ergonómica y cómoda
+              permite una conducción sencilla y ágil.<br />
+              Además, esta evolución del modelo FZ-S mantiene su propuesta de rápida
+              respuesta, confiabilidad y eficiencia de consumo en el uso urbano.
+              </p>
+              <a href="/assets/novedades.html" class="boton boton_descubrir">ver mas</a>
+            </div>
+          </div>
+          <img src="./img/fz 3.0.jpg" alt="moto yamaha FZ-S FI V3.0" class="imgNovedades" />
+        </article>
+        <article class="card_publicitario">
+          <iframe
+            class="video"
+            width="1100"
+            height="707"
+            src="https://www.youtube.com/embed/pWDP9HdoGj4"
+            title="Impossible Hill Climb Arette - Rocket Dirt Bike Race - 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;      picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+       </article>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>
+          Somos Todo Motos, página oficial de motociclistas del mundo mundial.
+          Mostramos lo último en motos para que nuestros riders no se pierdan
+          nada de este mundo
+        </p>
+      </div>
+      <div>
+        <img src="./img/iconofooter.png" alt="logo viejo"/>
+        <p>Todo Motos, derechos reservados por la CIA</p>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/">
+          <img
+            src="img/icons8-facebook-48.png"
+            alt="logo facebook"
+            title="logo de facebook"
+            class="LogoRedes"
+          />
+        </a>
+        <a href="https://www.instagram.com/">
+          <img
+            src="img/logoIG.png"
+            alt="logo instagram"
+            title="logo de intagram"
+            class="LogoRedes"
+          />
+        </a>
+        <a href="https://www.youtube.com/">
+          <img
+            src="img/icons8-youtube-48.png"
+            alt="logo youtube"
+            title="logo de youtube"
+            class="LogoRedes"
+          />
+        </a>
+        <a href="https://twitter.com/home?lang=es">
+          <img
+            src="img/icons8-twitter-50.png"
+            alt="logo twiter"
+            title="logo de twiter"
+            class="LogoRedes"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
