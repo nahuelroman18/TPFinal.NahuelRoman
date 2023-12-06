@@ -1,0 +1,86 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tipos {
+  padding: 2rem 4%;
+  width: 100%;
+  background-color: rgb(243, 118, 118);
+}
+.tipos h2 {
+  height: 70px;
+  text-align: center;
+}
+.tipos .card_publicitario {
+  display: flex;
+  padding: 50px;
+  padding-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.tipos .card_publicitario .card_publicitaria_container {
+  background: rgb(255, 85, 0);
+  background: linear-gradient(90deg, rgb(255, 85, 0) 0%, rgb(140, 129, 130) 15%, rgb(244, 230, 139) 41%, rgb(244, 229, 139) 53%, rgb(237, 238, 145) 69%, rgb(244, 229, 139) 100%);
+}
+.tipos .card_publicitario .card_publicitaria_container .card_container {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.tipos .tipos_container {
+  width: 100%;
+  padding: 1rem 4%;
+  height: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tipos .tipos_container .card {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+.tipos .tipos_container .card .card_icono {
+  width: 60px;
+  height: 70px;
+}
+.tipos .tipos_container .card .card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.tipos .tipos_container .card .card_container .card_container_boton {
+  display: flex;
+}
+.tipos .tipos_container .card .card_container .card_container_boton .boton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seccionMarcas {
+  padding: 5px 30px 30px 30px;
+  width: 100%;
+}
+.seccionMarcas .seccionMarcasTitle {
+  background-color: orange;
+  padding: 30px;
+}
+.seccionMarcas .carrusel {
+  padding: 0 50px 0 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
