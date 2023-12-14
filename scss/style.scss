@@ -1,3 +1,20 @@
+@mixin space( $width, $padding, $sides, $height, $gap, $columnas ){
+  width:$width;
+  padding: $padding $sides;
+  height: $height;
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat($columnas,1fr);    
+}
+
+@mixin card($width, $background, $border, $box, $box1, $box2, $boxcolor, $align){
+  width: $width;
+  background-color: $background;
+  border-radius: $border;
+  box-shadow: $box $box1 $box2 $boxcolor;
+  display: flex;
+  align-items: $align;
+}
 
 *{  padding: 0%;
     margin: 0%;
@@ -21,56 +38,56 @@
         align-items: center;
         justify-content: center;
         .card_publicitaria_container{
-            background: rgb(255,85,0);
-            background: linear-gradient(90deg, rgba(255,85,0,1) 0%, rgba(140,129,130,1) 15%, rgba(244,230,139,1) 41%, rgba(244,229,139,1) 53%, rgba(237,238,145,1) 69%, rgba(244,229,139,1) 100%);
-            .card_container{
-                width: 100%;
-                padding: 10px;
-                font-size: 1.3rem;
-            }
-        }
-    }
-    .tipos_container{
-        width:100%;
-        padding: 1rem 4%;
-        height: 100%;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(3,1fr);
-        .card{
+          background: rgb(255,85,0);
+          background: linear-gradient(90deg, rgba(255,85,0,1) 0%, rgba(140,129,130,1) 15%, rgba(244,230,139,1) 41%, rgba(244,229,139,1) 53%, rgba(237,238,145,1) 69%, rgba(244,229,139,1) 100%);
+          .card_container{
             width: 100%;
-            background-color: rgb(255, 255, 255);
-            border-radius: 5px;
-            box-shadow: 1px 1px 5px rgb(0, 0, 0);
-            display: flex;
-            align-items: center;
-            .card_icono{
-                width: 60px;
-                height: 70px;
-            }
-            .card_container{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                width: 100%;
-                padding: 10px;
-                font-size: .90rem;
-                .card_container_boton{
-                    display: flex;
-                    .boton {
-                        padding: 10px 20px;
-                        background-color: #007bff;
-                        color: white;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                      }
-                }
-
-            }  
+            padding: 10px;
+            font-size: 1.3rem;
           }
+        }
       }
+      .tipos_container{
+        @include space( 100%, 1rem, 4%, 100%, 1rem, 3)
+      }
+      .card{
+        @include card( 100%, rgb(255, 255, 255), 5px, 1px, 1px, 5px, black, center)
+      }
+      .card_icono{
+        width: 60px;
+        height: 70px;
+      }
+  .card_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding: 10px;
+    font-size: .90rem;
+    .card_container_boton{
+      display: flex;
+      .boton {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    
+  }  
 }
+// tienda
+
+.tipos{
+  padding: 2rem 4%;
+  width: 100%;
+  background-color: rgb(243, 118, 118);
+      .remera{
+        width: 150px;
+      }
+  }
 
 // marcas
 
@@ -122,34 +139,6 @@
         }
     }
 }
-
-// tienda
-
-.tipos{
-  padding: 2rem 4%;
-  width: 100%;
-  background-color: rgb(243, 118, 118);
-  .tipos_container{
-    width:100%;
-    padding: 1rem 4%;
-    height: 100%;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3,1fr);
-    .card{
-      width: 100%;
-      background-color: rgb(255, 255, 255);
-      border-radius: 5px;
-      box-shadow: 1px 1px 5px rgb(0, 0, 0);
-      display: flex;
-      align-items: center;
-      .remera{
-        width: 150px;
-      }
-    }
-  }
-}
-
 
 .pie{
   background-color: rgb(247,9,9);
